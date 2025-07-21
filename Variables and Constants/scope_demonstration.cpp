@@ -6,4 +6,4 @@ int main(){
     for(int j = 0;j<=x;j++){ //block scope
         cout<<j;
     }
-}
+}    
