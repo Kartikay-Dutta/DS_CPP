@@ -6,8 +6,8 @@ void swap(int* a, int* b) {
   *b = temp;
 }
 int main() {
- int x = 2, y = 3;
- swap(&x, &y);
- cout << "x: " << x << ", y: " << y << endl;
-return 0;
+  int x = 2, y = 3;
+  swap(&x, &y);
+  cout << "x: " << x << ", y: " << y << endl;
+  return 0;
 }
