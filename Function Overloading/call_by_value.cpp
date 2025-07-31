@@ -6,6 +6,6 @@ void change(int x) {
 int main() {
  int num = 5;
  change(num);
- std::cout << num << std::endl; // Still 5!
+ cout << num << endl; // Still 5!
  return 0;
 }
