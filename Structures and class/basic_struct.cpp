@@ -1,13 +1,16 @@
 #include<iostream>
 using namespace std;
-struct Point{
-    int x;
-    int y;
+struct Student{
+    int id;
+    double marks;
 };
 int main(){
-    Point p; // Create a Point(object)
-    p.x = 3;
-    p.y = 7;
-    cout<< p.x<<", "<<p.y<<endl;
+    Student s1; // Create a Point(object)
+    s1.id = 101;
+    s1.marks = 93.5;
+    cout<< "Student id: "<<s1.id<<endl;
+    cout<< "Student marks: "<<s1.marks<<endl;
     return 0;
-}
+}           
+
+
