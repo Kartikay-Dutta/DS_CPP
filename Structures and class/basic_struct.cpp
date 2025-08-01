@@ -5,7 +5,7 @@ struct Point{
     int y;
 };
 int main(){
-    Point p;
+    Point p; // Create a Point(object)
     p.x = 3;
     p.y = 7;
     cout<< p.x<<", "<<p.y<<endl;
