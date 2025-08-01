@@ -9,5 +9,5 @@ int main(){
     Rectangle box;
     box.width = 10;
     box.height = 5;
-    cout<<"Area: "<<box.width*box.height<<endl;
+    cout<<"Area of the rectangle: "<<box.width*box.height<<endl;
 }
