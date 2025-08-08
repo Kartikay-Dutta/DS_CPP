@@ -10,7 +10,7 @@ public:
 };
 
 void revealSecret(const Box& b) {
-    cout << b.secret << endl;
+    cout << b.secret << endl; // allowed, friend can acess private members
 }
 
 int main() {
