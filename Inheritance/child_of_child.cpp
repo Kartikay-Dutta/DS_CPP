@@ -4,21 +4,44 @@ using namespace std;
 class Base {
 public:
     void fun() {
-        cout << "Hello";
+        cout << "Hello" << endl;
     }
 };
+
 
 class ChildBase : protected Base {
+    // fun() protected inside ChildBase
 };
 
-class GrandChild : public ChildBase {
+class GrandChildPublic : public ChildBase {
 public:
     void callFun() {
-        fun(); 
+        fun(); //fun() protected in ChildBase
     }
 };
+
+class GrandChildProtected : protected ChildBase {
+public:
+    void callFun() {
+        fun();
+    }
+};
+
+class GrandChildPrivate : private ChildBase {
+public:
+    void callFun() {
+        fun();
+    }
+};
+
 int main() {
-    GrandChild g1;
+    GrandChildPublic g1;
+    GrandChildProtected g2;
+    GrandChildPrivate g3;
+
     g1.callFun(); 
-    return 0;
+    g2.callFun(); 
+    g3.callFun(); 
+
+    // g1.fun(); 
 }
